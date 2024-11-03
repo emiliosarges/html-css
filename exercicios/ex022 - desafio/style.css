@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'android' ;
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(131, 248, 116);
+    text-align: justify;
+}
+
+header {
+    background-image: linear-gradient(to bottom, green, rgb(52, 202, 52));
+    margin: 0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px 10px;
+    color: white;
+    box-shadow: 3px 3px 6px rgba(0, 128, 0, 0.603);
+}
+
+
+
+header > nav {
+    text-align: left;   
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+    font-weight: bolder;
+}
+
+h1 {
+    
+}
+
+h1#titulo{
+    font-family: 'android';
+    color: rgb(1, 90, 1);
+}
+
+
+header > p{
+    padding: 0px 0px 20px 0px;
+}
+
+main {
+    background-color: white;
+    width: 800px;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 3px 3px 6px rgba(0, 128, 0, 0.589);
+}
+
+h2 {
+    background-image: linear-gradient(45deg, rgba(0, 128, 0, 0.452), rgba(90, 90, 90, 0.562));
+    color: rgb(1, 90, 1);
+    font-family: 'android';
+    padding: 2px 0px 0px 3px;
+}
+
+div {
+    text-align: center;
+    
+}
+
+h3 {
+    background-color: green;
+    text-align: center;
+}
+#aprender {
+    text-align: justify;
+    background-color: rgb(175, 233, 175);
+    border-radius: 0px 0px 8px 8px;
+    padding: 0px 0px 10px 0px;
+    margin-right: 10px;
+    margin-left: 10px;
+    box-shadow: 5px 5px 5px rgba(1, 73, 1, 0.432);
+}
+
+#aprenderp {
+    padding: 0px 0px 10px 0px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
