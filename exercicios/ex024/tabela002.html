@@ -17,6 +17,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative; /** titulo fixo**/
             margin: auto;
         }
 
@@ -32,6 +33,11 @@
             background-color: lightgray;
         }
 
+        thead > tr th{  /**Titulo Fixo **/
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
  /**      tbody > tr:nth-child(odd){ 2n-1
             background-color: yellow;
         }
@@ -49,10 +55,14 @@
             vertical-align: middle;
         }
 
+
+
         thead, tfoot {
             background-color: gray;
             color: white;
         }
+
+
     </style>
 </head>
 <body>
