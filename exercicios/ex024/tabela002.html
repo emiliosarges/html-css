@@ -32,8 +32,19 @@
             background-color: lightgray;
         }
 
+ /**      tbody > tr:nth-child(odd){ 2n-1
+            background-color: yellow;
+        }
+        tbody > tr:nth-child(even){   2n
+            background-color: blue;
+        } **/
 
-        .num {
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+
+
+        td.num {
             text-align: right;
             vertical-align: middle;
         }
