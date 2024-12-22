@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: greenyellow;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.39);
+        }
+
+        body {
+            margin: auto;
+            width: 400px;
+            background-color: darkgray;
+        }
+        
+        fieldset {
+            background-color: darkslategray;
+            width: 400px;
+            height: 200px;
+            border-color: green;
+            border-radius: 5px;
+            color: greenyellow;
+            text-decoration: underline;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.322);
+        }
+
+        legend {
+            color: greenyellow;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.342);
+        }
+
+        .botoes:hover:hover {
+            background-color: black;
+            color: greenyellow;
+            transition: 0.7s;
+        }
+
+        .botoes {
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.322);
+            color: black;
+            background-color: greenyellow;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="email">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" minlength="2" maxlength="20" required placeholder="Digite seu nome">
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="seunome@email.com">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel-national" pattern="^\(\d{2})\d{4,5}-\d{4}$" placeholder="Ex: (88)88888-8888">
+            </p>
+        </fieldset>
+        <!--Estudar mais sobre RegEx - Expressões Regulares-->
+        <p>
+            <input type="submit" value="Enviar" class="botoes">
+            <input type="reset" value="Limpar" class="botoes">
+        </p>
+
+    </form>
+</body>
+</html>
