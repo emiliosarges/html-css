@@ -1,3 +1,23 @@
 @charset "UTF-8";
 
 /*Configurações gerais*/
+
+* {
+    margin: 0PX;
+    padding: 0PX;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #233eff;
+    background-size: contain;
+    background-repeat: no-repeat; /*não sei o motivo, mas essa configuração não funcionou para as configurações gerais. Tive que configurar individualmente cada arquivo css separado. */
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px  #1526a7;
+    padding: 10px;
+}
