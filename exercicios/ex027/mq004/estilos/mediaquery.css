@@ -34,8 +34,8 @@ Grandes: acima de 1200px
     }
 
     img#phone {display: none;}
-    img#tablet {display: block;}
-    img#print {display: none;}
+    img#tablet {display: none;}
+    img#print {display: block;}
     img#pc {display: none;}
     img#tv {display: none;}
 }
@@ -56,7 +56,7 @@ Grandes: acima de 1200px
     body {
         background-image: url(../imagens/back-pc.jpg);
     }
-    
+
     img#phone {display: none;}
     img#tablet {display: none;}
     img#print {display: none;}
