@@ -7,15 +7,30 @@
     <style>
         div.container {
             border: 3px solid blue;
-            height: 250px;
+            height: 300px;
             display: grid;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto;
-            gap: 5px;
-            align-items: stretch;
-            justify-items: stretch;
-            align-content: stretch;
-            justify-content: stretch;
+            /* grid-template-rows: 100px 100px 100px;
+            grid-template-columns: auto auto auto; */
+
+            grid-template: 100px 100px 100px / auto auto auto;
+            
+            /* grid-auto-rows: 100px;
+            grid-auto-columns: 100px; */
+
+            gap: 0px;
+            
+            /* align-items: normal;
+            justify-items: normal;
+            align-content: normal;
+            justify-content: normal; */
+            place-items: stretch center; /*align-itens + justfy-itens*/
+
+            place-content: start end; /*align-content + justfy-content*/
+
+
+
+
+
         }
 
         div.item {
@@ -35,6 +50,11 @@
         <div class="item">G</div>
         <div class="item">H</div>
         <div class="item">I</div>
+        
+
+        
+       
+        
     </div>
 </body>
 </html>
